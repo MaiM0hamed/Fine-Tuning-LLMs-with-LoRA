@@ -1,33 +1,56 @@
-# Fine-Tuning-LLMs-with-LoRA
-Overview
+📌 Overview
 
-This project demonstrates how to fine-tune a Large Language Model (LLM) using Parameter-Efficient Fine-Tuning (PEFT) and LoRA adapters.
-The goal is to train a lightweight, cost-efficient version of an LLM on custom instruction-style data.
+This project provides a clean and practical implementation for fine-tuning Large Language Models (LLMs) using PEFT (Parameter-Efficient Fine-Tuning) with LoRA adapters.
 
-The entire workflow runs smoothly on Google Colab (recommended).
+Instead of fully retraining an LLM — which is costly, slow, and requires high-end GPUs — LoRA updates only a small portion of the model’s parameters. This approach enables:
 
- Tech Stack
+Faster training
+
+Lower memory consumption
+
+Better performance with small datasets
+
+Support for free or low-cost environments like Google Colab
+
+This repository is well-suited for beginners, researchers, and developers who want to adapt powerful LLMs to their own datasets (Q&A, chat, translation, instruction-following, etc.) without heavy compute requirements.
+
+⚙️ Tech Stack
+
+The project is built using modern, widely adopted tools in the LLM ecosystem:
 
 Python 3.10
 
-Google Colab
+Google Colab (recommended compute environment)
 
 Hugging Face Transformers
 
-PEFT (LoRA)
+PEFT + LoRA for efficient model fine-tuning
 
-BitsAndBytes (4-bit / 8-bit quantization)
+BitsAndBytes for 4-bit & 8-bit quantization
 
-Datasets library
+Hugging Face Datasets for data loading and preprocessing
+
+These tools make it possible to run and fine-tune models like LLaMA, Mistral, and similar architectures on consumer-grade hardware.
 
 📂 Project Structure
 project/
 │
 ├── data/
-│   └── dataset.json        # Training dataset (instruction-format)
+│   └── dataset.json          # Custom instruction dataset used for fine-tuning
 │
-├── training_colab.ipynb    # Fine-tuning notebook (Google Colab)
+├── training_colab.ipynb      # Google Colab notebook containing the full training pipeline
 │
-├── inference.py            # Script for generating responses after training
+├── inference.py              # Script to test the fine-tuned model locally or in Colab
 │
-└── README.md
+└── README.md                 # Project documentation
+
+📁 Folder Breakdown
+
+data/
+→ Place your dataset here. The project expects a JSON or JSONL instruction-tuning dataset.
+
+training_colab.ipynb
+→ The main Google Colab notebook containing the full workflow: model loading, LoRA configuration, training, and saving outputs.
+
+inference.py
+→ A minimal script to load the fine-tuned LoRA adapter and generate responses.
