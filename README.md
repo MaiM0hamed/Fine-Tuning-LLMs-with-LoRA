@@ -35,13 +35,17 @@ These tools make it possible to run and fine-tune models like LLaMA, Mistral, an
 📂 Project Structure
 project/
 │
+
 ├── data/
 │   └── dataset.json          # Custom instruction dataset used for fine-tuning
 │
+
 ├── training_colab.ipynb      # Google Colab notebook containing the full training pipeline
 │
+
 ├── inference.py              # Script to test the fine-tuned model locally or in Colab
 │
+
 └── README.md                 # Project documentation
 
 📁 Folder Breakdown
