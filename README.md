@@ -32,29 +32,7 @@ Hugging Face Datasets for data loading and preprocessing
 
 These tools make it possible to run and fine-tune models like LLaMA, Mistral, and similar architectures on consumer-grade hardware.
 
-📂 Project Structure
-project/
-│
 
-├── data/
-│   └── dataset.json          # Custom instruction dataset used for fine-tuning
-│
-
-├── training_colab.ipynb      # Google Colab notebook containing the full training pipeline
-│
-
-├── inference.py              # Script to test the fine-tuned model locally or in Colab
-│
-
-└── README.md                 # Project documentation
-
-📁 Folder Breakdown
-
-data/
-→ Place your dataset here. The project expects a JSON or JSONL instruction-tuning dataset.
-
-training_colab.ipynb
-→ The main Google Colab notebook containing the full workflow: model loading, LoRA configuration, training, and saving outputs.
 
 inference.py
 → A minimal script to load the fine-tuned LoRA adapter and generate responses.
