@@ -1,5 +1,6 @@
 📌 Overview
-
+Introduction
+Welcome to  fine-tuning large language models (LLMs)! In this hands-on guide, you will learn how to fine-tune a pre-trained language model using LLaMA-Factory, Hugging Face Transformers, and vLLM. The tutorial provides step-by-step instructions for data preparation, model fine-tuning, evaluation, and deployment.
 This project provides a clean and practical implementation for fine-tuning Large Language Models (LLMs) using PEFT (Parameter-Efficient Fine-Tuning) with LoRA adapters.
 
 Instead of fully retraining an LLM — which is costly, slow, and requires high-end GPUs — LoRA updates only a small portion of the model’s parameters. This approach enables:
