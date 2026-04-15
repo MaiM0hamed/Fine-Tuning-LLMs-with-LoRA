@@ -20,7 +20,7 @@ This repository is well-suited for beginners, researchers, and developers who wa
 
 The project is built using modern, widely adopted tools in the LLM ecosystem:
 
-Python 3.10
+Python 3.11
 
 Google Colab (recommended compute environment)
 
